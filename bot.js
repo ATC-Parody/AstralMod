@@ -923,6 +923,12 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply("Is it me you're looking for?");
                     } else if (msg.toLowerCase().includes("i") && (msg.toLowerCase().includes("love") || msg.toLowerCase().includes(":heart:") || msg.toLowerCase().includes("<3"))) {
                         message.reply("Aww! Thanks! :heart:");
+					} else if (msg.toLowerCase().includes("undertale")) {
+                        message.reply("NO! **I HATE THAT GAME STUPID**.. oh sorry for calling you stupid will you love me again :frowning:");
+					} else if (msg.toLowerCase().includes("pokemon")) {
+                        message.reply("**I PLAY POKEMON GO EVERY...** Oh sorry about that uhh....");
+					} else if (msg.toLowerCase().includes("can") && (msg.toLowerCase().includes("i") || msg.toLowerCase().includes("go") || msg.toLowerCase().includes("out"))){
+                        message.reply(":no_entry_sign: NO! THE SUN IS A DEADLY LAZER... Not anymore, there's a blanket.");
                     }
                 }
             }
