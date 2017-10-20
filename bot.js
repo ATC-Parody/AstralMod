@@ -509,11 +509,11 @@ client.on('ready', () => {
     setGame();
     
     //Jump into waiting room
-	/*client.channels.get("368501920417185792").join().then(function(conn) {
+	client.channels.get("368501920417185792").join().then(function(conn) {
         console.log("[STATUS] AstralMod is connected to the waiting room");
         connection = conn;
         playAudio();
-    }); */
+    });
     
     //Get all messages in #suggestions
     client.channels.get("369224177435017226").fetchMessages({
