@@ -406,7 +406,7 @@ function handleAction(message) {
             actioningMember[message.guild.id] = null;
         } else if ((msg.toLowerCase() == "jail" || msg.toLowerCase() == "j") && (message.guild.id == 368206021526552576 || message.guild.id == 263368501928919040 || message.guild.id == 305039436490735627)) {
             if (message.guild.id == 368206021526552576) {
-                member.addRole(member.guild.roles.get("277942939915780099"));
+                member.addRole(member.guild.roles.get("371068548660985857"));
             } else if (message.guild.id == 305039436490735627) {
                 member.addRole(member.guild.roles.get("310196007919157250"));
             } else {
