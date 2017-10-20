@@ -1,6 +1,6 @@
 /****************************************
  * 
- *   AstralMod: Moderation bot for AstralPhaser Central and other Discord servers
+ *   AstralMod: Moderation bot for AstrelTaser Cantral and other Discord servers
  *   Copyright (C) 2017 Victor Tran and Rylan Arbour
  *
  *   This program is free software: you can redistribute it and/or modify
@@ -573,13 +573,13 @@ function postBulletin() {
             channel.send(":warning: PING! Don't forget, the **no expletive** rule is now in effect. Thanks!");
             break;
         case 1:
-            channel.send(":warning: PING! If you missed out, don't forget to check out the AstralPhaser channel for a review of the chat!");
+            channel.send(":warning: PING! If you missed out, don't forget to check out the AstrelTaser channel for a review of the chat!");
             break;
         case 2:
             channel.send(":warning: PING! Thanks for coming to the chat everyone!");
             break;
         case 3:
-            channel.send(":warning: PING! Welcome to AstralPhaser Central!");
+            channel.send(":warning: PING! Welcome to AstrelTaser Cantral!");
             break;
         case 4:
             channel.send(":warning: PING! For anyone who asks: we're not doing rotations!");
@@ -694,11 +694,11 @@ function messageChecker(oldMessage, newMessage) {
     
     if (message.author.id != 280495817901473793 && !message.author.bot) {
         //Server Detection:
-        //AstralPhaser Central: 368206021526552576
+        //AstrelTaser Cantral: 368206021526552576
         //AKidFromTheUK       : 285740807854751754
 
         if (doModeration[message.guild.id]) { //Check if we should do moderation on this server
-            if (expletiveFilter || message.guild.id == 278824407743463424) { //Check for expletives only if on AstralPhaser Central or theShell
+            if (expletiveFilter || message.guild.id == 278824407743463424) { //Check for expletives only if on AstrelTaser Cantral or theShell
                 //Check for expletives
                 var exp;
                 if (containsExpletive(msg)) { //Gah! They're not supposed to say that!
@@ -732,7 +732,7 @@ function messageChecker(oldMessage, newMessage) {
                 }
                 
                 
-                //Continue only if on AstralPhaser
+                //Continue only if on AstrelTaser
                 if (message.guild.id == 368206021526552576 && message.channel.id == 369303454956650496) {
                     //Check for links
                     
@@ -832,12 +832,12 @@ function messageChecker(oldMessage, newMessage) {
             
             //Universal friendly checks:
             //BotWarnings:
-            //AstralPhaser Central: 282513354118004747
+            //AstrelTaser Cantral: 369221540728012802
             //theShell            : 283184634400079872
             if (message.author.id != 370351405296386048 && msg.search(/\b(kys|kill yourself|k-y-s|k y s|k ys|k ys|k i l l yourself|k i l l y o u r s e l f|k-ys|ky-s|kill y o u r s e l f|kill ys|k yourself|killyourself|k y o u r s e l f|k why s|k.y.s.|k-y-s.|ky-s.|k-ys.|k y s.|ky s.|k ys.)\b/i) != -1) {
                 var auth = message.author;
-                if (message.guild.id == 368206021526552576) { //AstralPhaser
-                    client.channels.get("282513354118004747").send(":red_circle: " + getUserString(auth) + " \"kys\" <#" + message.channel.id + ">.");
+                if (message.guild.id == 368206021526552576) { //AstrelTaser
+                    client.channels.get("369221540728012802").send(":red_circle: " + getUserString(auth) + " \"kys\" <#" + message.channel.id + ">.");
                 } else if (message.guild.id == 278824407743463424) { //theShell {
                     client.channels.get("283184634400079872").send(":red_circle: " + getUserString(auth) + " \"kys\" <#" + message.channel.id + ">.");
                 } else if (message.guild.id == 281066689892974592) { //LE
@@ -1676,7 +1676,7 @@ function messageChecker(oldMessage, newMessage) {
                             "                  Type on to set the filter on.\n" +
                             "                  Type off to set the filter off.\n\n" +
                             "prepchat          Moves people into Chatroom Phil for\n" +
-                            "                  the AstralPhaser Weekly Chat\n\n";
+                            "                  the AstrelTaser Weekly Chat\n\n";
                         }
                             
                         helpMessage = helpMessage + 
@@ -2022,8 +2022,8 @@ function messageChecker(oldMessage, newMessage) {
             
             if (lastMessages[message.author.id] == msg && sameMessageCount[message.author.id] == 10) {
                 var auth = message.author;
-                if (message.guild.id == 368206021526552576) { //AstralPhaser
-                    client.channels.get("282513354118004747").send(":red_circle: " + getUserString(auth) + " was spamming on " + message.channel.name + ".");
+                if (message.guild.id == 368206021526552576) { //AstrelTaser
+                    client.channels.get("369221540728012802").send(":red_circle: " + getUserString(auth) + " was spamming on " + message.channel.name + ".");
                 } else if (message.guild.id == 278824407743463424) { //theShell
                     client.channels.get("283184634400079872").send(":red_circle: " + getUserString(auth) + " was spamming on " + message.channel.name + ".");
                 } else if (message.guild.id == 281066689892974592) { //LE
@@ -2061,8 +2061,8 @@ function messageChecker(oldMessage, newMessage) {
                 message.delete();
             } else if (smallMessageCount[message.author.id] == 10) {
                 var auth = message.author;
-                if (message.guild.id == 368206021526552576) { //AstralPhaser
-                    client.channels.get("282513354118004747").send(":red_circle: " + getUserString(auth) + " was spamming on " + message.channel.name + ".");
+                if (message.guild.id == 368206021526552576) { //AstrelTaser
+                    client.channels.get("369221540728012802").send(":red_circle: " + getUserString(auth) + " was spamming on " + message.channel.name + ".");
                 } else if (message.guild.id == 278824407743463424) { //theShell
                     client.channels.get("283184634400079872").send(":red_circle: " + getUserString(auth) + " was spamming on " + message.channel.name + ".");
                 } else if (message.guild.id == 281066689892974592) { //LE
@@ -2154,9 +2154,9 @@ client.on('guildMemberAdd', function(guildMember) {
 
 client.on('guildMemberUpdate', function(oldUser, newUser) {
     if (newUser.guild.id == 368206021526552576) {
-        if (newUser.roles.find("name", "Jailed")) {
+        if (newUser.roles.find("name", "I broke the rules!")) {
             console.log("[STATUS] " + getUserString(newUser) + " --> JAIL");
-            client.channels.get("277943393231831040").send("<@" + newUser.id + "> :oncoming_police_car: You are now in jail. Appeal here to get out of jail. If you do not appeal successfully within 24 hours, an admin will **ban** you from the server.\n\n" + 
+            client.channels.get("369503920877207554").send("<@" + newUser.id + "> :oncoming_police_car: You are now in jail. Appeal here to get out of jail. If you do not appeal successfully within 24 hours, an admin will **ban** you from the server.\n\n" + 
             "Additionally, if you leave and rejoin this server in an attempt to break out of jail, you will be **banned.**\n\n" + 
             "Timestamp: " + new Date().toUTCString());
         }
@@ -2168,7 +2168,7 @@ client.on('guildMemberUpdate', function(oldUser, newUser) {
         
         if (newUser.nickname != oldUser.nickname) {
             console.log("[STATUS] " + getUserString(newUser) + " --> N(" + newUser.nickname + ")");
-            var channel = client.channels.get("282513354118004747"); //Bot Warnings
+            var channel = client.channels.get("369221540728012802"); //Bot Warnings
             if (newUser.nickname == null) {
                 channel.send(":abcd: " + getUserString(oldUser) + " :arrow_right: [cleared]");
             } else {
@@ -2186,10 +2186,10 @@ client.on('guildMemberUpdate', function(oldUser, newUser) {
 client.on('userUpdate', function(oldUser, newUser) {
     if (newUser.username != oldUser.username) {
         
-        var aphcGuild = client.channels.get("282513354118004747").guild;
+        var aphcGuild = client.channels.get("369221540728012802").guild;
         aphcGuild.fetchMember(newUser).then(function(member) {
             console.log("[STATUS] " + getUserString(oldUser) + " --> U(" + newUser.username + ")");
-            var channel = client.channels.get("282513354118004747"); //Admin Bot warnings
+            var channel = client.channels.get("369221540728012802"); //Admin Bot warnings
             channel.send(":ab: " + getUserString(oldUser) + " :arrow_right: " + newUser.username + ". Check spreadsheet!");
         }).catch(function() {
             
@@ -2230,15 +2230,15 @@ client.on('guildMemberRemove', function(user) {
 
 client.on('messageDelete', function(message) {
     if (message.content.startsWith("bot:") || message.content.startsWith("mod:")) return; //Don't want to warn about AstralMod deleted messages
-    if (message.author.id == 277949276540239873) return; //Ignore AstralPlayer
+    if (message.author.id == 361050274615525396) return; //Ignore AstralPlayer
     var channel = null;
     
     if (message.guild != null) {
         if (panicMode[message.guild.id]) return; //Don't want to be doing this in panic mode!
         if (message.guild.id == 140241956843290625) return; //Ignore TGL
           
-        if (message.guild.id == 368206021526552576) { //AstralPhaser Central
-            channel = client.channels.get("290439711258968065");
+        if (message.guild.id == 368206021526552576) { //AstrelTaser Cantral
+            channel = client.channels.get("369221540728012802");
         } else if (message.guild.id == 278824407743463424) { //theShell
             channel = client.channels.get("290444399731671040");
         } else if (message.guild.id == 287937616685301762) { //WoW
@@ -2288,8 +2288,8 @@ client.on('messageDeleteBulk', function(messages) {
         if (panicMode[messages.first().guild.id]) return; //Don't want to be doing this in panic mode!
         if (messages.first().guild.id == 140241956843290625) return; //Ignore TGL
           
-        if (messages.first().guild.id == 368206021526552576) { //AstralPhaser Central
-            channel = client.channels.get("290439711258968065");
+        if (messages.first().guild.id == 368206021526552576) { //AstrelTaser Cantral
+            channel = client.channels.get("369221540728012802");
         } else if (messages.first().guild.id == 278824407743463424) { //theShell
             channel = client.channels.get("290444399731671040");
         } else if (messages.first().guild.id == 287937616685301762) { //WoW
@@ -2320,8 +2320,8 @@ client.on('messageUpdate', function(oldMessage, newMessage) {
     if (oldMessage.cleanContent == newMessage.cleanContent) return; //Ignore
     var channel = null;
     if (oldMessage.guild != null) {
-        if (oldMessage.guild.id == 368206021526552576) { //AstralPhaser Central
-            channel = client.channels.get("290439711258968065");
+        if (oldMessage.guild.id == 368206021526552576) { //AstrelTaser Cantral
+            channel = client.channels.get("369221540728012802");
         } else if (oldMessage.guild.id == 278824407743463424) { //theShell
             channel = client.channels.get("290444399731671040");
         } else if (oldMessage.guild.id == 287937616685301762) { //WoW
