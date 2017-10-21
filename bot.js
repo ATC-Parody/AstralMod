@@ -929,6 +929,14 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply("**I PLAY POKEMON GO EVERY...** Oh sorry about that uhh....");
 					} else if (msg.toLowerCase().includes("can") && (msg.toLowerCase().includes("i") || msg.toLowerCase().includes("go") || msg.toLowerCase().includes("out"))){
                         message.reply(":no_entry_sign: NO! THE SUN IS A DEADLY LAZER... Not anymore, there's a blanket.");
+					} else if (msg.toLowerCase().includes("c:")) {
+                        switch (Math.floor(Math.random() * 1000) % 4) {
+                            case 0:
+                                message.reply("I love magnets c:");
+                                break;
+                            case 1:
+                                message.reply("Aww thanks c:");
+                                break;
                     }
                 }
             }
