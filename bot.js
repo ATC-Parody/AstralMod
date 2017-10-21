@@ -935,6 +935,8 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":no_entry_sign: NO! PLEASE DON'T DIE YOU HAVE A PRECIOUS LIFE :sob:");
 					} else if (msg.toLowerCase().includes("die")) {
                         message.reply(":no_entry_sign: NO! I shall not die!");
+					} else if (msg.toLowerCase().includes("is") && (msg.toLowerCase().includes("this") && msg.toLowerCase().includes("server") && msg.toLowerCase().includes("real"))){
+                        message.reply("Oh yeah, It's not like Rylan is still in this server...");
                     }
                 }
             }
