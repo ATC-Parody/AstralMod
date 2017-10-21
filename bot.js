@@ -693,7 +693,7 @@ function messageChecker(oldMessage, newMessage) {
 	
 	if (msg == 'assmod') {
 		if (message.guild.id == 368206021526552576) {
-		message.reply("HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY... nah i'm joking");
+		message.reply(":no_entry_sign: HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY... nah i'm joking");
 		} else {
 			message.reply("Umm okay why are you making fun of me.");
 		}
@@ -946,6 +946,8 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":no_entry_sign: NO! I shall not die!");
 					} else if (msg.toLowerCase().includes("honeyfry") || msg.toLowerCase().includes("honeyfries")) {
                         message.reply(":honeyfry: YAY! HONEYFRIES FOR EVERYONE :D");
+					} else if (msg.toLowerCase().includes("i") && msg.toLowerCase().includes("hate") && msg.toLowerCase().includes("you")) {
+                        message.reply(":no_entry_sign: WHY YOU HATE ME :sob:");
                     }
                 }
             }
