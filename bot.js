@@ -1592,7 +1592,7 @@ function messageChecker(oldMessage, newMessage) {
                         } else if (!allowPrepChat) {
                             message.reply(':no_entry_sign: ERROR: Command was run less than a minute ago. To override this, use `mod:forceprepchat`');
                         } else {
-                            var waitingRoom = client.channels.get("277924441584041985");
+                            var waitingRoom = client.channels.get("368501920417185792");
 
                             membersInWaitingRoom = Array.from(waitingRoom.members.values());
 
@@ -1609,8 +1609,8 @@ function messageChecker(oldMessage, newMessage) {
                                 if (membersInWaitingRoom.length != 0) {
                                     //Choose a random member
                                     var chosenMember = membersInWaitingRoom.splice(Math.floor(Math.random() * 1000) % membersInWaitingRoom.length, 1)[0];
-                                    chosenMember.setVoiceChannel("277922530973581313").then(function() {
-                                        chosenMember.addRole(message.guild.roles.get("328075669080768514"));
+                                    chosenMember.setVoiceChannel("368422007332929536").then(function() {
+                                        chosenMember.addRole(message.guild.roles.get("371118531841884162"));
                                         console.log("Member placed in weekly chat");
                                         membersPlaced.push(chosenMember);
                                         message.channel.send(":speech_balloon: `" + getUserString(chosenMember) + "` was placed into the Weekly Chat")
@@ -1666,8 +1666,8 @@ function messageChecker(oldMessage, newMessage) {
                         if (message.guild.id != 368206021526552576) {
                             message.reply(':no_entry_sign: ERROR: Unable to use that command in this server.');
                         } else {
-                            message.guild.roles.get("328075669080768514").members.forEach(function(cmember) {
-                                cmember.removeRole(message.guild.roles.get("328075669080768514"));
+                            message.guild.roles.get("371118531841884162").members.forEach(function(cmember) {
+                                cmember.removeRole(message.guild.roles.get("371118531841884162"));
                             });
                             message.channel.send(":speech_balloon: All weekly chat-ees have the Chatroom Phil permissions revoked.");
                         }
