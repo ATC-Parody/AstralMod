@@ -1275,6 +1275,9 @@ function messageChecker(oldMessage, newMessage) {
                                 case "new york":
                                 case "miles":
                                 case "lemp":
+								case "alee":
+								case "alee14":
+								case "andrew":
                                     hours = -4;
                                     break;
                                 case "est":
