@@ -948,8 +948,6 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":honeyfry: YAY! HONEYFRIES FOR EVERYONE :D");
 					} else if (msg.toLowerCase().includes("i") && msg.toLowerCase().includes("hate") && msg.toLowerCase().includes("you")) {
                         message.reply(":no_entry_sign: WHY YOU HATE ME :sob:");
-					} else if (msg.toLowerCase().includes("tembot") || (message.mentions.users.has("361202413165608962"))) {
-                        message.reply("Oh that guy... THAT PERSON WHO LIKED UNDERTALE THAT STUPID PERSON!");
                     }
                 }
             }
