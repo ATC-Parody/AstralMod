@@ -1352,6 +1352,10 @@ function messageChecker(oldMessage, newMessage) {
                             commandProcessed = true;
                     } else if (command.startsWith("suggest")) {
                             command = command.substr(8);
+                            if (message.guild.id == 368206021526552576) {
+                                if (!message.member.roles.has("371303033180782593") && !isMod(message.member)) {
+                                    message.reply(":no_entry_sign: ERROR: Suggestions have been restricted to regulars on this server. Become a regular or speak directly to an admin to suggest something.");
+                                } else {
                                     suggestStates[message.author.id] = {};
                                     suggestStates[message.author.id].state = 1;
                                     suggestStates[message.author.id].guild = message.guild.id;
@@ -1360,7 +1364,7 @@ function messageChecker(oldMessage, newMessage) {
 
                                     message.reply(":arrow_left: Continue in DMs.");
                                     message.author.send(suggestionStartMessage);
-                                
+                                }
                             } else {
                                 message.reply(":no_entry_sign: ERROR: Suggestions are not accepted on this server via AstralMod. Speak directly to an admin to suggest something.");
                             }
