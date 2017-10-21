@@ -1029,7 +1029,8 @@ function messageChecker(oldMessage, newMessage) {
                         "about             Tells you about AstralMod\n" + 
                         "copyright         Tells you about AstralMod\n" + 
                         "license           Tells you about AstralMod\n" + 
-                        "warranty          Tells you about AstralMod\n\n" + 
+                        "warranty          Tells you about AstralMod\n" + 
+						"contribute        Tells you about AstralMod\n\n" +
                         "ping|pong         Asks AstralMod to reply with a message\n\n" +
                         "These commands need to be prefixed with bot:\n" +
                         "```";
@@ -1038,14 +1039,14 @@ function messageChecker(oldMessage, newMessage) {
                 case "about":
                 case "license":
                     message.author.send(
-                        "AstralMod " + amVersion + " - Copyright © Victor Tran and Rylan Arbour 2017. Licensed under the GNU General Public License, version 3 (or any later version). For more info, type in bot:copyright in a channel with AstralMod.\n" +
-                        "https://github.com/vicr123/AstralMod"
+                        "AstralMod " + amVersion + " - Copyright © Victor Tran, Rylan Arbour and Alee14 2017. Licensed under the GNU General Public License, version 3 (or any later version). For more info, type in bot:copyright in a channel with AstralMod.\n" +
+                        "This was modified by Alee14 and if you want to help me contribute to this do mod:contribute or bot:contribute"
                     );
                     commandProcessed = true;
                     break;
                 case "copyright":
                     message.author.send(
-                        "Copyright (C) 2017 Victor Tran and Rylan Arbour\n\n" +
+                        "Copyright (C) 2017 Victor Tran, Rylan Arbour and Alee14\n\n" +
 
                         "This program is free software: you can redistribute it and/or modify\n" +
                         "it under the terms of the GNU General Public License as published by\n" +
@@ -1149,6 +1150,10 @@ function messageChecker(oldMessage, newMessage) {
 				case "totallynotaneasteregg":
 					message.reply("Ha, you found an easter egg! Take that, :egg:");
 			        commandProcessed = true;
+					break;
+				case "contribute"
+					message.reply("Ooh! I can see you want to contribute to this bot :D\nHere's the link to my repo: https://github.com/Alee14/AstralMod-1.0\nAnd if you want to see the original AstralMod here's the link: https://github.com/vicr123/AstralMod");
+					commandProcessed = true;
 					break;
                 case "uptime":
                     var timeString; // What we'll eventually put into the message
