@@ -934,9 +934,6 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":no_entry_sign: NO! PLEASE DON'T DIE YOU HAVE A PRECIOUS LIFE :sob:");
 					} else if (msg.toLowerCase().includes("die")) {
                         message.reply(":no_entry_sign: NO! I shall not die!");
-					} else if (msg.toLowerCase().includes("i") && (msg.toLowerCase().includes("hate") && (msg.toLowerCase().includes("you")){
-                        message.reply("Why you hate me :sob:");
-                    }
                 }
             }
         }
