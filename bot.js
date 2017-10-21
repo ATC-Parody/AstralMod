@@ -691,7 +691,7 @@ function messageChecker(oldMessage, newMessage) {
         message.channel.send("live");
     }
 	
-	if (msg == 'assmod') {
+	if (msg.toLowerCase().includes("assmod")) {
 		if (message.guild.id == 368206021526552576) {
 		message.reply(":no_entry_sign: HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY... nah i'm joking");
 		} else {
