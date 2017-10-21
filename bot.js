@@ -931,6 +931,10 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":no_entry_sign: NO! THE SUN IS A DEADLY LAZER... Not anymore, there's a blanket.");
 					} else if (msg.toLowerCase().includes("c:")) {
                         message.reply("I love magnets c:");
+					} else if (msg.toLowerCase().includes("i") && (msg.toLowerCase().includes("want") || msg.toLowerCase().includes("to") || msg.toLowerCase().includes("die"))){
+                        message.reply(":no_entry_sign: NO! PLEASE DON'T DIE YOU HAVE A PRECIOUS LIFE :sob:");
+					} else if (msg.toLowerCase().includes("die")) {
+                        message.reply(":no_entry_sign: NO! I shall not die!");
                     }
                 }
             }
