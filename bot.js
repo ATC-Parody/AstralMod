@@ -1130,6 +1130,10 @@ function messageChecker(oldMessage, newMessage) {
                     message.reply("On the same line my dear honeyfry. ```cpp\nvoid abc() {\n}```");
                     commandProcessed = true;
                     break;
+				case "totallynotaneasteregg":
+					message.reply("Ha, you found an easter egg! Take that, :egg:!");
+			        commandProcessed = true;
+					break;
                 case "uptime":
                     var timeString; // What we'll eventually put into the message
                     var uptime = parseInt(client.uptime); // Get uptime in ms
