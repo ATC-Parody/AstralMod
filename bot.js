@@ -65,7 +65,6 @@ const suggestionStartMessage =  "**Make a suggestion**\n" +
                                 "- Any misuse of this command, including (but not limited to) spam will lead to appropriate discipline from staff.\n\n" +
                                 "**Here are some things not to suggest because they will be immediately declined.** This counts as misuse of the suggest command, so hit `q` now if you were going to suggest one of these.\n" +
                                 "- New text/voice channels.\n" +
-                                "- Anything to do with AstralMod. For that, head to <https://github.com/vicr123/AstralMod> and file a bug report.\n" +
                                 "- New bots.\n\n" +
                                 "Wait 30 seconds, and then respond with `y` if you understood the above."
 
@@ -935,8 +934,8 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":no_entry_sign: NO! PLEASE DON'T DIE YOU HAVE A PRECIOUS LIFE :sob:");
 					} else if (msg.toLowerCase().includes("die")) {
                         message.reply(":no_entry_sign: NO! I shall not die!");
-					} else if (msg.toLowerCase().includes("is") && (msg.toLowerCase().includes("this") && msg.toLowerCase().includes("server") && msg.toLowerCase().includes("real"))){
-                        message.reply("Oh yeah, It's not like Rylan is still in this server...");
+					} else if (msg.toLowerCase().includes("i") && (msg.toLowerCase().includes("hate") && (msg.toLowerCase().includes("you")){
+                        message.reply("Why you hate me :sob:");
                     }
                 }
             }
