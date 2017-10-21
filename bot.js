@@ -865,8 +865,8 @@ function messageChecker(oldMessage, newMessage) {
         
         if (message.mentions != null && message.mentions.users != null) {
             if (message.mentions.users.has("370351405296386048")) {
-                if (message.author.id == 159310300275802112) {
-                    message.reply("BEGONE. You called my creator mean. :sob:");
+                if (message.author.id == 361202413165608962) {
+                    message.reply("BEGONE. You're a undertale fan. :sob:");
                 } else {
                     if (msg.toLowerCase().includes("jxbot")) {
                         message.reply(":no_entry_sign: YA MENTIONED THE INFERIOR BOT. [punches hand and shakes head slowly]");
