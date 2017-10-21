@@ -692,7 +692,7 @@ function messageChecker(oldMessage, newMessage) {
     }
 	
 	if (msg == 'assmod') {
-		message.reply("HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY!");
+		message.reply("HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY... nah i'm joking");
 	}
     
 	
