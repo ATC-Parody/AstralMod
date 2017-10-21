@@ -692,7 +692,11 @@ function messageChecker(oldMessage, newMessage) {
     }
 	
 	if (msg == 'assmod') {
+		if (message.guild.id == 368206021526552576) {
 		message.reply("HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY... nah i'm joking");
+		} else {
+			message.reply("Umm okay why are you making fun of me.");
+		}
 	}
     
 	
@@ -940,6 +944,8 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply(":no_entry_sign: NO! PLEASE DON'T DIE YOU HAVE A PRECIOUS LIFE :sob:");
 					} else if (msg.toLowerCase().includes("die")) {
                         message.reply(":no_entry_sign: NO! I shall not die!");
+					} else if (msg.toLowerCase().includes("honeyfry") || msg.toLowerCase().includes("honeyfries")) {
+                        message.reply(":honeyfry: YAY! HONEYFRIES FOR EVERYONE :D");
                     }
                 }
             }
@@ -1120,7 +1126,7 @@ function messageChecker(oldMessage, newMessage) {
                 case "honeyfry":
                 case "honeyfries":
                     if (message.guild.id == 368206021526552576) {
-                        message.channel.send('<:honeyfry:291805507428286475> The verdict is YES. GO HONEYFRIES! WOO!\nDon\'t you dare react with a negative emoji Stefan. *I\'m watching you...*');
+                        message.channel.send(':honeyfry: The verdict is YES. GO HONEYFRIES! WOO!\nDon\'t you dare react with a negative emoji Stefan. *I\'m watching you...*');
                     } else {
                         message.channel.send(':no_entry_sign: Honeyfries have nothing to do with this server. Carry on...');
                     }
@@ -1164,12 +1170,6 @@ function messageChecker(oldMessage, newMessage) {
                     break;
                 case "suggest":
                     if (message.guild.id == 368206021526552576 || message.guild.id == 297057036292849680) {
-                        if (message.guild.id == 368206021526552576) {
-                            if (!message.member.roles.has("278338447335489546") && !isMod(message.member)) {
-                                message.reply(":no_entry_sign: ERROR: Suggestions have been restricted to regulars on this server. Become a regular or speak directly to an admin to suggest something.");
-                                break;
-                            }
-                        }
                         
                         suggestStates[message.author.id] = {};
                         suggestStates[message.author.id].state = 1;
@@ -1352,10 +1352,6 @@ function messageChecker(oldMessage, newMessage) {
                             commandProcessed = true;
                     } else if (command.startsWith("suggest")) {
                             command = command.substr(8);
-                            if (message.guild.id == 368206021526552576) {
-                                if (!message.member.roles.has("278338447335489546") && !isMod(message.member)) {
-                                    message.reply(":no_entry_sign: ERROR: Suggestions have been restricted to regulars on this server. Become a regular or speak directly to an admin to suggest something.");
-                                } else {
                                     suggestStates[message.author.id] = {};
                                     suggestStates[message.author.id].state = 1;
                                     suggestStates[message.author.id].guild = message.guild.id;
@@ -1364,7 +1360,7 @@ function messageChecker(oldMessage, newMessage) {
 
                                     message.reply(":arrow_left: Continue in DMs.");
                                     message.author.send(suggestionStartMessage);
-                                }
+                                
                             } else {
                                 message.reply(":no_entry_sign: ERROR: Suggestions are not accepted on this server via AstralMod. Speak directly to an admin to suggest something.");
                             }
