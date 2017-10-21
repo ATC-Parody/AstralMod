@@ -693,10 +693,6 @@ function messageChecker(oldMessage, newMessage) {
 	
 	if (msg == 'assmod') {
 		message.reply("HEY! WHY ARE YOU CALLING ME THAT THAT'S IT YOUR JAILED BUDDY!");
-		if (message.guild.id == 368206021526552576) {
-                member.addRole(member.guild.roles.get("371126168461639680"));
-		}
-		console.log(`[ALERT] ${member.user.username} just called me a**mod`);
 	}
     
 	
