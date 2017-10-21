@@ -691,8 +691,8 @@ function messageChecker(oldMessage, newMessage) {
         message.channel.send("live");
     }
     
-	if (msg == "astralmod sucks" {
-		message.reply(":no_entry_sign: NO! People love me right guys :heart:")
+	if (msg == "astralmod sucks") {
+		message.reply(":no_entry_sign: NO! People love me right guys :heart:");
 	}
 	
 	
