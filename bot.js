@@ -691,6 +691,11 @@ function messageChecker(oldMessage, newMessage) {
         message.channel.send("live");
     }
     
+	if (msg == "astralmod sucks" {
+		message.reply(":no_entry_sign: NO! People love me right guys :heart:")
+	}
+	
+	
     if (message.author.id != 280495817901473793 && !message.author.bot) {
         //Server Detection:
         //AstrelTaser Cantral: 368206021526552576
@@ -1131,7 +1136,7 @@ function messageChecker(oldMessage, newMessage) {
                     commandProcessed = true;
                     break;
 				case "totallynotaneasteregg":
-					message.reply("Ha, you found an easter egg! Take that, :egg:!");
+					message.reply("Ha, you found an easter egg! Take that, :egg:");
 			        commandProcessed = true;
 					break;
                 case "uptime":
