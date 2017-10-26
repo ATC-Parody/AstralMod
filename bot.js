@@ -1047,7 +1047,7 @@ function messageChecker(oldMessage, newMessage) {
                     commandProcessed = true;
                     break;
 				case "contribute":
-					message.reply("Ooh! I can see you want to contribute to this bot :D\nHere's the link to my repo: https://github.com/Alee14/AstralMod-1.0\nAnd if you want to see the original AstralMod here's the link: https://github.com/vicr123/AstralMod");
+					message.reply("Ooh! I can see you want to contribute to this bot :D\nHere's the link to my repo: https://github.com/FakeDiscordServersBots/AstralMod-1.0\nAnd if you want to see the original AstralMod here's the link: https://github.com/vicr123/AstralMod");
 					commandProcessed = true;
 					break;
                 case "copyright":
