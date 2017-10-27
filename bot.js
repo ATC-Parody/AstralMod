@@ -2185,6 +2185,14 @@ client.on('guildMemberAdd', function(guildMember) {
             }
         }
     }
+	var embed = new Discord.RichEmbed();
+  
+	embed.setAuthor("Victor Tran", "https://yt3.ggpht.com/-Iuf1v4-SSSM/AAAAAAAAAAI/AAAAAAAAAAA/89IYeQw--wU/photo.jpg");
+	embed.setColor("#0096FF");
+	embed.setDescription(":wave: **HEY HEY HEY**! Welcome " + guildMember.displayName + " to AstrelTaser Cantral! Before you start, we recommend you check the rules over at https://docs.google.com/spreadsheets/d/1JUxm3ykqCWCagXZqGo390fO9Fl7IpGcnHmCfdrdBx8w/edit?usp=drivesdk. Thanks, and enjoy the community. - Victor");
+	embed.setURL("https://docs.google.com/spreadsheets/d/1JUxm3ykqCWCagXZqGo390fO9Fl7IpGcnHmCfdrdBx8w/edit?usp=drivesdk");
+  
+	guildMember.sendEmbed(embed)
 });
 
 client.on('guildMemberUpdate', function(oldUser, newUser) {
