@@ -63,6 +63,9 @@ const suggestionStartMessage =  "**Make a suggestion**\n" +
                                 "- Your Discord Username will be recorded and sent along with the suggestion.\n" +
                                 "- Your suggestion will be publicly visible.\n" +
                                 "- Any misuse of this command, including (but not limited to) spam will lead to appropriate discipline from staff.\n\n" +
+                                "**Here are some things that you would put into this suggestion progress.**\n" +
+                                "- New quotes for AstrelQuact.\n" +
+                                "- Staff Replica.\n\n" +
                                 "**Here are some things not to suggest because they will be immediately declined.** This counts as misuse of the suggest command, so hit `q` now if you were going to suggest one of these.\n" +
                                 "- New text/voice channels.\n" +
                                 "- New bots.\n\n" +
@@ -952,6 +955,8 @@ function messageChecker(oldMessage, newMessage) {
                         message.reply("Oh that guy... THAT PERSON WHO LIKED UNDERTALE THAT STUPID PERSON!");
                     } else if (msg.toLowerCase().includes("mario") || msg.toLowerCase().includes("luigi")) {
                         message.reply("Ooh! I like that game :D");
+                    } else if (msg.toLowerCase().includes("i'm") && msg.toLowerCase().includes("your") && msg.toLowerCase().includes("father")) {
+                        message.reply(":no_entry_sign: **NO!** YOU'RE NOT MY FATHER! VICTOR IS MY FATHER!");
                     }
                 }
             }
