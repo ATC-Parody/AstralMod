@@ -572,22 +572,22 @@ function postBulletin() {
 
     switch (Math.floor(Math.random() * 1000) % 6) {
         case 0:
-            channel.send(":warning: PING! Don't forget, the **no expletive** rule is now in effect. Thanks!");
+            channel.send("<:vtBoshyTime:376894053243158528> PING! Don't forget, the **no expletive** rule is now in effect. Thanks!");
             break;
         case 1:
-            channel.send(":warning: PING! If you missed out, don't forget to check out the AstrelTaser channel for a review of the chat!");
+            channel.send("<:vtBoshyTime:376894053243158528> PING! If you missed out, don't forget to check out the AstrelTaser channel for a review of the chat!");
             break;
         case 2:
-            channel.send(":warning: PING! Thanks for coming to the chat everyone!");
+            channel.send("<:vtBoshyTime:376894053243158528> PING! Thanks for coming to the chat everyone!");
             break;
         case 3:
-            channel.send(":warning: PING! Welcome to AstrelTaser Cantral!");
+            channel.send("<:vtBoshyTime:376894053243158528> PING! Welcome to AstrelTaser Cantral!");
             break;
         case 4:
-            channel.send(":warning: PING! For anyone who asks: we're not doing rotations!");
+            channel.send("<:vtBoshyTime:376894053243158528> PING! For anyone who asks: we're not doing rotations!");
             break;
         case 5:
-            channel.send(":warning: PING! Hip Hip Hooray for the mods!");
+            channel.send("<:vtBoshyTime:376894053243158528> PING! Hip Hip Hooray for the mods!");
             break;
     }
 }
