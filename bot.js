@@ -555,7 +555,7 @@ function getBoshyTime(guild) {
 
 function isMod(member) {
     if (member != null) {
-        if (member.roles.find("name", "Admoon") || member.roles.find("name", "Maderator") || member.roles.find("name", "maderators") || member.roles.find("name", "Mod") || member.roles.find("name", "Dixcord:Admoon") || member.roles.find("name", "Dixcord:Mad") || member.roles.find("name", "Pseudo-Moderator") || member.roles.find("name", "Staffe") || member.roles.find("name", "The Crew") || member.roles.find("name", "Mini-Mods")) {
+        if (member.roles.find("name", "Administrator") || member.roles.find("name", "Moderator") || member.roles.find("name", "moderators") || member.roles.find("name", "Mod") || member.roles.find("name", "Dixcord:Administrator") || member.roles.find("name", "Dixcord:Mad") || member.roles.find("name", "Pseudo-Moderator") || member.roles.find("name", "Staff") || member.roles.find("name", "The Crew") || member.roles.find("name", "Mini-Mods") || member.roles.find("name", "Real APHC Staff")) {
             return true;
         } else {
             return false;
