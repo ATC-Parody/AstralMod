@@ -693,6 +693,10 @@ function messageChecker(oldMessage, newMessage) {
     if (msg == "kden") {
         message.channel.send("live");
     }
+    
+    if (msg == "o") {
+    	message.reply(`Do you mean oh ok?`)
+    }
 
 	if (msg.toLowerCase().includes("assmod")) {
 		if (message.guild.id == 368206021526552576) {
