@@ -83,7 +83,7 @@ function setGame() {
             presence.game.name = "with ban buttons";
             break; //SCRUATCHO
         case 1:
-            presence.game.name = "Fighting JXBot";
+            presence.game.name = "Fighting WaterBot";
             break;
         case 2:
             presence.game.name = "Annoy Victor";
@@ -875,7 +875,7 @@ function messageChecker(oldMessage, newMessage) {
                 if (message.author.id == 361202413165608962) {
                     message.reply("BEGONE. You're a undertale fan. :sob:");
                 } else {
-                    if (msg.toLowerCase().includes("jxbot")) {
+                    if (msg.toLowerCase().includes("waterbot")) {
                         message.reply(":no_entry_sign: YA MENTIONED THE INFERIOR BOT. [punches hand and shakes head slowly]");
                     } else if (msg.toLowerCase().includes("stop") || (msg.toLowerCase().includes("shut") && msg.toLowerCase().includes("up"))) {
 
