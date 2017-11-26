@@ -991,11 +991,11 @@ function messageChecker(oldMessage, newMessage) {
                     commandProcessed = true;
                     break;
 		case "help":
-			var "helpEmbed" = new Discord.RichEmbed()
+			var helpEmbed = new Discord.RichEmbed()
 			    	.setTitle("AstrelMod Help Contents")
 			    	.setDescription("Here are some things you can try. My prefix is either `mod:` or `bot:`")
 			    	.addField("Normal", "time\nclock\nnick\nsuggest\nabout\ncopyright\nlicense\nwarranty\ncontribute\nping\npong", true)
-			    	.addField("Mod Only", "mod [on|off]\nfilter [on|off]\nprepchar\ndeal\nrm\nuinfo\nrtid\nclock\n*panic*\ncancel\nhelp", true)
+			    	.addField("Mod Only", "mod [on|off]\nfilter [on|off]\nprepchat\ndeal\nrm\nuinfo\nrtid\nclock\n*panic*\ncancel\nhelp", true)
 			    	.setColor(0xfceb00)
 			    	.setFooter("Admin only commands depicted by *italics*")
 			message.channel.sendMessage(helpEmbed)
