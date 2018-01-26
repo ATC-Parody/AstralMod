@@ -9,3 +9,5 @@ td.js
 node_modules/
 
 keys\.json
+
+run.bat
