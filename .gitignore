@@ -11,3 +11,9 @@ node_modules/
 keys\.json
 
 run.bat
+
+ffmpeg.exe
+
+ffplay.exe
+
+ffprobe.exe
